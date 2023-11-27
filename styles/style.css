@@ -1,16 +1,19 @@
 :root{
     --black: black;
     --white: white;
-    --blue: rgb(91, 209, 215);
+    --blue: rgb(0, 122, 229);
     --green: rgb(158, 235, 71);
         
 }
+
 .header{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
-    justify-content: space-between;
-    
+    background-color: var(--black);
+    justify-content: space-between;  
+    width: 100%;  
+    /*position: fixed;
+    top: 0;*/
 }
 
 #logo {
@@ -35,14 +38,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
     
 }
 .boxone{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: start;
     background-color: var(--blue);
-    height: 50%;
+    background-image: url("../image/premium_dancer.png");
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 100%;
     
 }
 .boxtwo{
@@ -52,11 +61,7 @@ body{
     justify-content: center;
     
 }
-.imgdancer{
-    display: flex;
-    flex-direction: row;
 
-}
 .box-purple{
     display: flex;
     flex-direction: row;
@@ -64,11 +69,21 @@ body{
     justify-content: space-between;
 }
 footer{
-    display: flex;    
+    display: flex;  
+    flex direction: row;
+    justify-content: space-between;  
     background-color: var(--black);
-    color: var(--white);
-    position: fixed;
+    color: var(--white);    
     bottom: 0;
-    
-   
+    width: 100%;
 }
+.ancla a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+}
+.ancla a:hover{
+    color: var(--blue)
+}
+
+
