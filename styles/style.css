@@ -54,9 +54,26 @@ html{
         background-size: contain;
         background-repeat:no-repeat; 
     }
+    .header-nav {
+        display: none;
+    }
     .header {
-        flex-direction: row;
-        justify-content: space-between;
+        /*flex-direction: row;*/
+        /*justify-content: space-between;*/
+    }
+}
+.nav-desktop {
+    
+    width: 70%;
+}
+.nav-desktop-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+@media all and (max-width: 480px) {
+    .nav-desktop {
+        display: none;
     }
 }
 
