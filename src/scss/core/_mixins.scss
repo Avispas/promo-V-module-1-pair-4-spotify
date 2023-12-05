@@ -1,0 +1,13 @@
+@mixin html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}

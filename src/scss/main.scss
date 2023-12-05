@@ -17,27 +17,28 @@ html{
     -webkit-text-size-adjust: 100%;
     font-size: 62.5%;
     }
-.body{
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.body{    
+    font-family: $font-family;
+    line-height: 30px;
+    font-size: medium;
 }
 
 .header{
     display: flex;
-    background-color: var(--black);
-    justify-content: space-between;  
+    justify-content: space-between; 
+    background-color: var(--black);     
  }
 
 .logo {
     width: 100px;
-    padding: 10px;
+    padding: $paddingten;
 }
 .menupic{
     width: 40px;
-    padding: 10px;
+    padding: $paddingten;
 }
 .main{
-     height: 100vh;    
+    height: 100vh;    
 }
 .boxone{
     display: flex;
@@ -46,6 +47,8 @@ html{
     background-color: var(--blue);     
     height: 40vh;
     color: var(--white); 
+    padding: $paddingten;
+    
     
 }
 @media all and (min-width: 480px) {
@@ -76,11 +79,11 @@ html{
 }
 
 .plan{
-    background-color: var(--green);
-    border: 2px solid var(--green);
-    border-radius: 20%;
+    background-color: var(--green);  
     color: var(--white);
-
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
 }
 .boxtwo{
     display: flex;
