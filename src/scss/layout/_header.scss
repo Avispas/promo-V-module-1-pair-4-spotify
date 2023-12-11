@@ -1,5 +1,55 @@
-// .page__header {
-//   display: flex;
-//   justify-content: space-evenly;
-//   margin-bottom: 3rem;
-// }
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $black;
+}
+
+.logo {
+    width: 100px;
+    padding: $paddingten;
+}
+
+.menupic {
+    width: 40px;
+    padding: $paddingten;
+}
+
+@media all and (min-width: 480px) {
+    .boxone {
+        background-image: url("/image/premium_dancer.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .header-nav {
+        display: none;
+    }
+}
+.header-nav-desktop {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+.nav-desktop-ul {
+    display: flex;
+    gap: 40px;
+}
+.ul-li>a {
+    text-decoration: none;
+    color: $white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.download::after{
+    content: "|-";
+    margin-left: 15px;
+}
+
+@media all and (max-width: 480px) {
+    .header-nav-desktop {
+        display: none;
+    }
+}

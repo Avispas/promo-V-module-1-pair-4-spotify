@@ -1,11 +1,7 @@
 @import 'core/variables';
 @import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
 :root{
     --black: black;
     --white: white;
@@ -17,26 +13,11 @@ html{
     -webkit-text-size-adjust: 100%;
     font-size: 62.5%;
     }
-.body{    
-    font-family: $font-family;
-    line-height: 30px;
-    font-size: medium;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between; 
-    background-color: var(--black);     
- }
-
-.logo {
-    width: 100px;
-    padding: $paddingten;
-}
-.menupic{
-    width: 40px;
-    padding: $paddingten;
-}
+// .body{    
+//     font-family: $font-family;
+//     line-height: 30px;
+//     font-size: medium;
+// }
 .main{
     height: 100vh;    
 }
@@ -51,33 +32,6 @@ html{
     
     
 }
-@media all and (min-width: 480px) {
-    .boxone {
-        background-image: url("../image/premium_dancer.png");
-        background-position: right;
-        background-size: contain;
-        background-repeat:no-repeat; 
-    }
-    .header-nav {
-        display: none;
-    }
-    
-}
-.nav-desktop {
-    
-    width: 70%;
-}
-.nav-desktop-ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
-@media all and (max-width: 480px) {
-    .nav-desktop {
-        display: none;
-    }
-}
-
 .plan{
     background-color: var(--green);  
     color: var(--white);
