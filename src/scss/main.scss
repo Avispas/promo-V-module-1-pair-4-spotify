@@ -2,51 +2,52 @@
 @import 'core/reset';
 @import 'layout/header';
 @import 'layout/footer';
-:root{
-    --black: black;
-    --white: white;
-    --blue: rgb(0, 122, 229);
-    --green: rgb(158, 235, 71); 
-}
+
 html{
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     font-size: 62.5%;
     }
-// .body{    
-//     font-family: $font-family;
-//     line-height: 30px;
-//     font-size: medium;
-// }
+
 .main{
     height: 100vh;    
 }
+
 .boxone{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    background-color: var(--blue);     
+    background-color: $blue;     
     height: 40vh;
-    color: var(--white); 
-    padding: $paddingten;
-    
-    
+    color: $white; 
+    padding: $paddingten;   
+    font-family: Roboto;
+    font-size: 2rem; 
+    line-height: 1.3;
+    row-gap: 3px;
+   }
+.boxbig {
+    @media (min-width: 526px) {
+        width: 50%;   
+
+    }
+
 }
 .plan{
-    background-color: var(--green);  
-    color: var(--white);
+    background-color: $green;  
+    color: $white;
     width: 150px;
     height: 30px;
     font-weight: bold;
 }
-.boxtwo{
-    display: flex;
-    flex-direction: column; 
-    height: 60vh;
-    align-items: center;
-    justify-content: space-around;
-    background-color: pink;
-}
+// .boxtwo{
+//     display: flex;
+//     flex-direction: column; 
+//     height: 60vh;
+//     align-items: center;
+//     justify-content: space-around;
+//     background-color: pink;
+// }
 
 .box-purple{
     display: flex;
@@ -63,22 +64,3 @@ html{
 .box-blue {
     height: 100px;
 }
-
-footer{
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;  
-    background-color: var(--black);
-    color: var(--white);    
-    bottom: 0;
-   }
-.ancla a{
-    text-decoration: none;
-    color: var(--white);
-    padding: 10px;
-}
-.ancla a:hover{
-    color: var(--blue)
-}
-

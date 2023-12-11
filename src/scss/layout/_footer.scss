@@ -1,8 +1,18 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+footer{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: $black;
+    color: $white;    
+    bottom: 0;
+   }
+.ancla a{
+    text-decoration: none;
+    color: $white;
+    padding: 10px;
+}
+.ancla a:hover{
+    color: $blue;
+}
+
